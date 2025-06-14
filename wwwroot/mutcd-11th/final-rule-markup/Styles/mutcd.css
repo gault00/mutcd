@@ -321,6 +321,7 @@ a:link {
 }
 a:visited {
 	/* color: purple; */
+	color: inherit;
 	text-decoration: underline dotted;
 }
 a:hover {
