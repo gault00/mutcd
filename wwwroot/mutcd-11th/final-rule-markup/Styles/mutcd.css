@@ -315,16 +315,18 @@ td.moneydata, th.moneydata {
 
 /* ******** SECTION 4: Links. ********* */
 a:link {
-	color: blue;
-	text-decoration: underline;
+	/* color: blue; */
+	color: inherit;
+	text-decoration: underline dotted;
 }
 a:visited {
-	color: purple;
-	text-decoration: underline;
+	/* color: purple; */
+	text-decoration: underline dotted;
 }
 a:hover {
 	text-decoration: none;
-	color: #000;
+	color: blue;
+	/* color: #000; */
 }
 /** the following three styles are to hide d-links from visual browsers */
 .dlink a:link, .dlink a:visited, .dlink a:hover {
@@ -589,4 +591,15 @@ tr.even td span.text_added {color: #2d60f9 !important;}
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* TOC */
+ol.toc {
+    list-style-type: none;
+	font-family: Times;
+	font-size: 11pt;
+}
+
+ol.toc h1 {
+	text-align: left;
 }
