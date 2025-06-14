@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2.352mm" height="2.3516mm" version="1.1" viewBox="0 0 2.352 2.3516" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="a">
+   <path d="m63 409.75h513v334.5h-513z"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-13.742 -100.35)">
+  <g transform="matrix(.35278 0 0 -.35278 -20.947 322.97)">
+   <g clip-path="url(#a)">
+    <path d="m105 631.06h-6.667v-6.666h6.667z" fill="#f4901d"/>
+   </g>
+  </g>
+ </g>
+</svg>

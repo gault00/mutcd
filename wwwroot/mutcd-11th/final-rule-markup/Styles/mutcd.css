@@ -1,0 +1,592 @@
+/* This is cleaned up by Steve Gault */
+
+/*This is the style sheet for FHWA MUTCD */ 
+/* This style sheet is divided into the following sections: 
+1. Elements 
+2. Lists 
+3. Tables 
+4. Links 
+5. Major sections of the template 
+6. Classes */ 
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../Fonts/HelveticaLTStd-Roman.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../Fonts/HelveticaLTStd-Bold.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../Fonts/HelveticaLTStd-Obl.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../Fonts/HelveticaLTStd-BoldObl.otf");
+}
+
+
+/* ******** SECTION 1: Block-level elements ******** */ 
+
+body {
+	font-family: verdana, Helvetica, Arial, sans-serif;
+	font-size: 80%;	/* MUTCD website has content embedded in table that has 80% applied */
+	/* width: 95%; */
+}
+h1 {
+	font-family: Times;
+	text-transform: uppercase;
+	margin-left: -15px;
+	text-align: center;
+	font-size:  /* 16pt; */  /*139%;*/ /* 11.5pt */ 13.5pt;
+	font-weight: bold;
+	color: /* #990033 */;
+}
+h2 {
+	font-family: Times;
+	text-transform: uppercase;
+	font-size: /* 14pt; */ /* 115%*/ /*11.5pt*/ ;
+	color: /* #990033 */;
+	text-decoration: underline;
+	text-align: center;
+	/* font-style: italic */;
+}
+h3 {
+	font-family: Times;
+	margin-left: -15px;
+	margin-bottom: 0.3em;
+	font-size:  12pt;  /*105%;*/ /* 11.5pt */;
+	font-weight: bold;
+	color: /* #990033 */;
+	text-decoration: underline;
+	page-break-after: avoid;
+}
+h3.public-law {
+	font-size: /* 10pt; */ 105%;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: -1em;
+	padding-bottom: 0;
+}
+h4 {
+	font-size: /* 11pt; */ 80%;
+	font-weight: bold;
+	text-align: left;
+}
+address {
+	font-size: /* 10pt; */ /* 100% */ 11pt;
+	font-family: Times;
+	font-style: normal;
+	margin-top: 1em;
+}
+
+.rev {
+	border-left: 2px solid;
+	border-color: red;
+	padding-left: 3px;
+	margin-left: -5px;
+}
+/** ******** SECTION 2: Lists ******** */
+li {
+	font-size: /* 10pt; */ 100%;
+}
+li p {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size: /* 10pt; */ 100%;
+}
+
+ol {
+	padding-left: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul {
+	padding-left: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/** ******** SECTION 3: Tables ******** */
+table {
+	font-family: Helvetica, Arial, sans-serif;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th {
+	background: #D1D2D4;
+	font-size: /*9pt*/ 10pt;
+	position: sticky;
+	top: 0;
+}
+
+tbody th {
+	background: #f1f2f4;
+	font-size: /* 7.5pt */ 10pt;
+}
+
+td {
+	font-size: /* 7.5pt */ /*10pt*/ 9pt;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+caption {
+	margin-top: 6pt;
+	font-size: /* 10pt; */ /* 90% */ 11.5pt;
+	font-weight: bold;
+	padding-bottom: 2px;
+	page-break-after: avoid;
+}
+/** Begin styles for table cell borders: start with the tablecell-top-left-cell style,, then use the other cells as described, starting with the top-left cell and working counter-clockwise. Finish with the tablecell-interior class for all remaining cells. */
+.tablecell-top-left-cell {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+	border-left: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-leftcolumn {
+	border-left: 1px solid /* #CF8A9D */ black;
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-bottom-left-cell {
+	border: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-bottomrow {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+	border-bottom: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-bottom-right-cell {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+	border-bottom: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-rightcolumn {
+	border-top: 1px solid/* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-top-right-cell {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-toprow {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-interior {
+	border-top: 1px solid /* #CF8A9D */ black;
+	border-right: 1px solid /* #CF8A9D */ black;
+}
+.tablecell-noborder {
+	border: none;
+}
+/** end styles for table cell borders */
+.tablecell-rightcolumn ul {
+	margin: 0;
+	padding: 0;
+}
+.tablecell-rightcolumn ul li {
+	list-style-position: inside;
+}
+.tablecell-bottom-right-cell ul {
+	margin: 0;
+	padding: 0;
+}
+.tablecell-bottom-right-cell ul li {
+	list-style-position: inside;
+}
+table.toc th {
+	text-align: left;
+}
+.datatable, .datatable-scoperow {
+	font-size: /* 10pt; */ 90%;
+	font-family: helvetica, verdana, arial, sans-serif;
+	background-color: #ccc;
+	text-align: left;
+	margin-top: 0 !important;
+	margin-top: 15px;
+}
+.datatable-scoperow th {
+	text-align: left;
+	font-weight: bold;
+	padding: 4px;
+	background-color: #fff;
+}
+.datatable th {
+	background-color: #e4e4e4;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+}
+.datatable td.empty-header-cell {
+	background-color: #e4e4e4;
+}
+.datatable td, .datatable-scoperow td {
+	padding: 5px 10px;
+	background-color: #fff;
+}
+.datatable caption, .datatable-scoperow caption {
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin-top: 15px;
+}
+
+.datatabletoc, .datatabletoc-scoperow {
+	font-size: 11pt;
+	font-family: helvetica, verdana, arial, sans-serif;
+	background-color: #ccc;
+	text-align: left;
+	margin-top: 0 !important;
+	margin-top: 15px;
+}
+.datatabletoc-scoperow th {
+	text-align: left;
+	font-weight: bold;
+	padding: 4px;
+	background-color: #fff;
+}
+.datatabletoc th {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+}
+.datatabletoc td.empty-header-cell {
+	background-color: #e4e4e4;
+}
+.datatabletoc td, .datatabletoc-scoperow td {
+	padding: 5px 10px;
+	background-color: #fff;
+}
+.datatabletoc caption, .datatabletoc-scoperow caption {
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin-top: 15px;
+}
+
+.vertical {
+	writing-mode: vertical-rl;
+}
+
+
+
+td.moneydata, th.moneydata {
+	text-align: right;
+}
+.tablenote {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 85%;
+	/*margin-top: 2px;*/
+	padding: 10px 0px 10px 0px;
+	text-align: left;
+}
+.tablenote p {
+	margin-top: 0px;
+}
+.tablenote ul {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+/* ******** SECTION 4: Links. ********* */
+a:link {
+	color: blue;
+	text-decoration: underline;
+}
+a:visited {
+	color: purple;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+/** the following three styles are to hide d-links from visual browsers */
+.dlink a:link, .dlink a:visited, .dlink a:hover {
+	color: #fff;
+	background-color: #fff;
+	text-decoration: none;
+}
+/** ******** SECTION 5: Major sections of the template ******** */
+#content {
+	padding-left: 15px;
+	/* width: 95%; */
+	max-width: 504pt;
+	margin: 0 auto;
+}
+.backto {
+	font-size: /* 9pt */ 100%;
+	padding: 10px 0;
+	margin: 0;
+}
+
+/** Navigation Area */
+.topic {
+	font-weight: bold;
+}
+/** ******** SECTION 6: Classes ******** */
+div.pagelist {
+	font-size: 8pt;
+	font-weight: normal;
+	margin-top: 0;
+}
+div.breadcrumb {
+	font-size: 10pt;
+	font-weight: normal;
+	margin-top: 0;
+}
+div.pagelist {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: /* 10pt; */ 100%;
+}
+.figure {
+	font-weight: bold;
+	text-align: center;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 11.5pt;
+}
+/* the note class is for use only while the MUTCD is in development and awaiting edits. once edits are applied, all note class tags should be removed from the html and this style sheet */
+.note {
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: "Times";
+	font-size: 11pt;
+	text-decoration-line: none;
+	background-color: /* #CC0000 */ /* #006400 */ #008a00;
+}
+.paranum {
+	text-align: left;
+	font-size: /*85%;*/ 7pt;
+	padding-left: 0;
+	margin-left: -15px;
+	/* margin-right: 10px; */
+	font-family: "Arial Narrow", Verdana, Arial, Helvetica, sans-serif;
+}
+.revnote {
+	font-size: 10pt;
+	padding-left: 15px;
+	margin-left: -10px;
+	font-family: "Arial Narrow", Verdana, Arial, Helvetica, sans-serif;
+	color: red;
+	transform-origin: 0 0;
+	transform: rotate(90deg);
+	position: absolute;
+}
+.option {
+	margin-left: 20px;
+	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
+	font-size: /* 10pt; */ /*100%;*/ 11pt;
+}
+.support {
+	margin-left: 20px;
+	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
+	font-size: /* 10pt; */ /*100%;*/ 11pt;
+}
+.guidance {
+	margin-left: 20px;
+	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
+	font-size: /* 10pt; */ /*100%;*/ 11pt;
+	font-style: italic;
+}
+/** the sectiontitle class used to be used to underline -- but currently that style is not in use */
+.standard {
+	margin-left: 20px;
+	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
+	font-size: /* 10pt; */ /*100%;*/ 11pt;
+	font-weight: bold;
+}
+
+.label {
+	margin-left: -20px;
+	text-indent: 0;
+}
+
+/** Tell NS4 to ignore these styles for indenting blocks of text in Appendix A1 without using the blockquote tag.... */ /*/*/
+div.indent1 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+div.indent2 {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+div.indent3 {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+/** Okay, we can let NS4 see the rest.... */
+
+p {
+	/*font-family: verdana, Arial, Helvetica, sans-serif;*/
+	font-size: /* 10pt; */ 100%;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+/** the next three classes were added for the change list */
+.change_noted {
+    background: #008a00;
+	color: #FFFFFF;
+	font-family: Times;
+	font-size: 11pt;
+	/* need inline-block to override text-decoration */
+	text-decoration: none;
+	display: inline-block;
+}
+.text_added {
+    color: #3366FF;
+	text-decoration: underline;
+}
+.text_deleted, .text_deleted a {
+    color: /* #EF0000 */ #B5082E !important;
+	text-decoration: line-through;
+}
+.change_from_npa {
+	background: rgba(255,255,0,0.5);
+}
+div.change_from_npa {
+	padding-left: 15px;
+	padding-right: 3px;
+	margin-left: -18px;
+	margin-right: -3px;
+}
+.offic_interp {
+    background: blue;
+	color: #FFFFFF !important;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-decoration: none !important;
+}
+
+.known_error_added {
+	background: #FFd24F;
+}
+
+.known_error_deleted {
+	background: #FFD24F;
+	text-decoration: line-through;
+}
+
+del {
+	background: #FFD24F;
+	text-decoration: line-through;
+}
+
+.banner-warning {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #ffbe2e;
+	background-color: #faf3d1;
+	color: #1b1b1b;
+	margin-left: -15px;
+}
+
+/* text from NPA federal register */
+.npa {
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #ffbe2e;
+	background-color: #faf3d1;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
+}
+
+/* final rule - Federal Register */
+.fr {
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #3498db;
+	background-color: #d6eaf8;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
+}
+
+/* final rule, disposition table - Federal Register */
+.fr-disp {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #2ecc71;
+	background-color: #d5f5e3;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
+}
+
+.inset-figurecover {
+	display: block;
+	float: right;
+	padding: 0 10px 10px 0;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 225px;
+}
+
+#gobutton, #gobutton2 {
+	font-size:12px !important;
+	padding:1px !important;
+}
+#query, #query1, #query2 {
+	font-size:14px !important;
+	height:20px;	
+}
+
+/* Adding classes for color contrast */
+
+tr.even {background-color: #CCFFCC;}
+
+tr.even td span.text_deleted {color: #e00000 !important;}
+tr.even td span.text_added {color: #2d60f9 !important;}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

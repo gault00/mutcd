@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12.641mm" height="3.3514mm" version="1.1" viewBox="0 0 12.641 3.3514" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-96.951 38.947)">
+  <g transform="matrix(.35278 0 0 -.35278 97.128 -38.65)">
+   <path d="m0 0 6.185-8.158h3.764l-6.443 8.5h-3.506z" fill="#f4901d"/>
+  </g>
+  <g transform="matrix(.35278 0 0 -.35278 102.21 -35.772)">
+   <path d="m0 0h3.765l-6.445 8.5h-3.766z" fill="#f4901d"/>
+  </g>
+  <g transform="matrix(.35278 0 0 -.35278 105.12 -35.772)">
+   <path d="m0 0h3.764l-6.444 8.5h-3.765z" fill="#f4901d"/>
+  </g>
+  <g transform="matrix(.35278 0 0 -.35278 108.02 -35.772)">
+   <path d="m0 0h3.763l-6.443 8.5h-3.766z" fill="#231f20"/>
+   <path d="m0 0h3.763l-6.443 8.5h-3.766z" fill="#f4901d"/>
+  </g>
+  <path d="m109.42-38.77h-12.289v2.9986h12.289z" fill="none" stroke="#231f20" stroke-width=".35278"/>
+ </g>
+</svg>
