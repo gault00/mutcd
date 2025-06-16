@@ -102,11 +102,10 @@ h3 {
 	page-break-after: avoid;
 }
 h3.public-law {
-	font-size: /* 10pt; */ 105%;
+	font-size: /* 10pt; */ 12pt;
 	font-weight: bold;
-	color: #000;
-	margin-bottom: -1em;
 	padding-bottom: 0;
+	margin-left: 0;
 }
 h4 {
 	font-size: /* 11pt; */ 80%;
@@ -460,6 +459,11 @@ div.pagelist {
 .label {
 	margin-left: -20px;
 	text-indent: 0;
+}
+
+.public-law p {
+	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
+	font-size: /* 10pt; */ /*100%;*/ 11pt;
 }
 
 /** Tell NS4 to ignore these styles for indenting blocks of text in Appendix A1 without using the blockquote tag.... */ /*/*/
