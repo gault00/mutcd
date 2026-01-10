@@ -11,6 +11,62 @@
 
 
 /* ******** SECTION 1: Block-level elements ******** */ 
+@font-face {
+	font-family: "Helvetica";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../Fonts/HelveticaLTStd-Roman.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../Fonts/HelveticaLTStd-Bold.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../Fonts/HelveticaLTStd-Obl.otf");
+}
+
+@font-face {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../Fonts/HelveticaLTStd-BoldObl.otf");
+}
+
+@font-face {
+	font-family: "Times";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../Fonts/TimesLTStd-Roman.otf");
+}
+
+@font-face {
+	font-family: "Times";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../Fonts/TimesLTStd-Bold.otf");
+}
+
+@font-face {
+	font-family: "Times";
+	font-weight: normal;
+	font-style: italic;
+	src: url("../Fonts/TimesLTStd-Obl.otf");
+}
+
+@font-face {
+	font-family: "Times";
+	font-weight: bold;
+	font-style: italic;
+	src: url("../Fonts/TimesLTStd-BoldObl.otf");
+}
+
 
 body {
 	font-family: verdana, Arial, Helvetica, sans-serif;
@@ -22,22 +78,25 @@ h1 {
 	text-transform: uppercase;
 	margin-left: -15px;
 	text-align: center;
-	font-size: /* 16pt; */ /*139%;*/ 11.5pt;
+	font-size: /* 16pt; */ /*139%;*/ 13.5pt;
 	font-weight: bold;
-	color: #990033;
+	/* color: #990033; */
 }
 h2 {
-	font-size: /* 14pt; */ 115%;
-	color: #990033;
+	font-family: Times;
+	text-transform: uppercase;
+	font-size: /* 14pt; */ /* 115% */;
+	/* color: #990033 */;
 }
 h3 {
 	font-family: Times;
 	margin-left: -15px;
 	margin-bottom: 0.3em;
-	font-size: /* 12pt; */ /*105%;*/ 11.5pt;
+	font-size:  12pt; /*105%;*/ /* 11.5pt */;
 	font-weight: bold;
-	color: #990033;
+	/* color: #990033; */
 	text-decoration: underline;
+	page-break-after: avoid;
 }
 h3.public-law {
 	font-size: /* 10pt; */ 105%;
@@ -85,23 +144,36 @@ ul {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 /** ******** SECTION 3: Tables ******** */
 table {
 	font-family: Helvetica, Arial, sans-serif;
+	border-collapse: collapse;
+	margin: 0 auto;
 }
 
 th {
 	background: #D1D2D4;
-	font-size: 9pt;
+	font-size: 10pt;
+	position: sticky;
+	top: 0;
 }
 
 tbody th {
 	background: #f1f2f4;
-	font-size: 7.5pt;
+	font-size: 10pt;
 }
 
 td {
-	font-size: 7.5pt;
+	font-size: 9pt;
+}
+
+th, td {
+	border: 1px solid black;
 }
 
 caption {
@@ -109,6 +181,8 @@ caption {
 	font-size: /* 10pt; */ /* 90% */ 11.5pt;
 	font-weight: bold;
 	padding-bottom: 2px;
+	page-break-after: avoid;
+	width: 100%;
 }
 /** Begin styles for table cell borders: start with the tablecell-top-left-cell style,, then use the other cells as described, starting with the top-left cell and working counter-clockwise. Finish with the tablecell-interior class for all remaining cells. */
 .tablecell-top-left-cell {
@@ -238,6 +312,10 @@ table.toc th {
 	margin-top: 15px;
 }
 
+.vertical {
+	writing-mode: vertical-rl;
+}
+
 
 
 td.moneydata, th.moneydata {
@@ -260,16 +338,19 @@ td.moneydata, th.moneydata {
 
 /* ******** SECTION 4: Links. ********* */
 a:link {
-	color: blue;
-	text-decoration: underline;
+	/* color: blue; */
+	color: inherit;
+	text-decoration: underline dotted;
 }
 a:visited {
-	color: purple;
-	text-decoration: underline;
+	/* color: purple; */
+	color: inherit;
+	text-decoration: underline dotted;
 }
 a:hover {
 	text-decoration: none;
-	color: #000;
+	color: blue;
+	/* color: #000; */
 }
 /** the following three styles are to hide d-links from visual browsers */
 .dlink a:link, .dlink a:visited, .dlink a:hover {
@@ -323,7 +404,10 @@ div.pagelist {
 .note {
 	font-weight: bold;
 	color: #FFFFFF;
-	background-color: #CC0000;
+	font-family: "Times";
+	font-size: 11pt;
+	text-decoration-line: none;
+	background-color: /* #CC0000 */ /* #006400 */ #008a00;
 }
 .paranum {
 	text-align: left;
@@ -347,17 +431,20 @@ div.pagelist {
 	margin-left: 20px;
 	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
 	font-size: /* 10pt; */ /*100%;*/ 11pt;
+	line-height: 97%;
 }
 .support {
 	margin-left: 20px;
 	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
 	font-size: /* 10pt; */ /*100%;*/ 11pt;
+	line-height: 97%;
 }
 .guidance {
 	margin-left: 20px;
 	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
 	font-size: /* 10pt; */ /*100%;*/ 11pt;
 	font-style: italic;
+	line-height: 97%;
 }
 /** the sectiontitle class used to be used to underline -- but currently that style is not in use */
 .standard {
@@ -365,6 +452,7 @@ div.pagelist {
 	font-family: /*verdana, Arial, Helvetica, sans-serif;*/ Times;
 	font-size: /* 10pt; */ /*100%;*/ 11pt;
 	font-weight: bold;
+	line-height: 97%;
 }
 
 .label {
@@ -399,14 +487,26 @@ p {
 	color: #FFFFFF;
 	font-family: Times;
 	font-size: 11pt;
+	/* need inline-block to override text-decoration */
+	text-decoration: none;
+	display: inline-block;
 }
 .text_added {
     color: #3366FF;
 	text-decoration: underline;
 }
 .text_deleted, .text_deleted a {
-    color: #EF0000 !important;
+    color: /* #EF0000 */ #B5082E !important;
 	text-decoration: line-through;
+}
+.change_from_npa {
+	background: rgba(255,255,0,0.5);
+}
+div.change_from_npa {
+	padding-left: 15px;
+	padding-right: 3px;
+	margin-left: -18px;
+	margin-right: -3px;
 }
 .offic_interp {
     background: blue;
@@ -428,6 +528,68 @@ p {
 del {
 	background: #FFD24F;
 	text-decoration: line-through;
+}
+
+.banner-warning {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #ffbe2e;
+	background-color: #faf3d1;
+	color: #1b1b1b;
+	margin-left: -15px;
+}
+
+/* text from NPA federal register */
+.npa {
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #ffbe2e;
+	background-color: #faf3d1;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
+}
+
+/* final rule - Federal Register */
+.fr {
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #3498db;
+	background-color: #d6eaf8;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
+}
+
+/* final rule, disposition table - Federal Register */
+.fr-disp {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.75em;
+	padding-right: 0.5rem;
+	border-left: 0.5rem solid #2ecc71;
+	background-color: #d5f5e3;
+	color: #1b1b1b;
+	margin-left: -15px;
+	text-decoration: none;
 }
 
 .inset-figurecover {
@@ -460,4 +622,15 @@ tr.even td span.text_added {color: #2d60f9 !important;}
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* TOC */
+ol.toc {
+    list-style-type: none;
+	font-family: Times;
+	font-size: 11pt;
+}
+
+ol.toc h1 {
+	text-align: left;
 }
