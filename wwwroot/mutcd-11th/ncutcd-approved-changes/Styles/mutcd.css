@@ -606,6 +606,14 @@ div.change_from_npa {
 	text-decoration: none;
 }
 
+ins.ncutcd img {
+	background-color: #3366FF22;
+}
+
+del.ncutcd img {
+	background-color: #B5082E22;
+}
+
 /* text from NPA federal register */
 .npa {
 	display: inline-block;
