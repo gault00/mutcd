@@ -57,14 +57,14 @@
 	font-family: "Times";
 	font-weight: normal;
 	font-style: italic;
-	src: url("../Fonts/TimesLTStd-Obl.otf");
+	src: url("../Fonts/TimesLTStd-Italic.otf");
 }
 
 @font-face {
 	font-family: "Times";
 	font-weight: bold;
 	font-style: italic;
-	src: url("../Fonts/TimesLTStd-BoldObl.otf");
+	src: url("../Fonts/TimesLTStd-BoldItalic.otf");
 }
 
 

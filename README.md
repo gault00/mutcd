@@ -14,5 +14,8 @@ Please report any errors discovered using the Github [Issues page](https://githu
 [Notice of Proposed Amendments](wwwroot/mutcd-11th/npa/Text/nav.xhtml) - issued 12/14/2020, including correction issued 12/29/2020  
 [Docket Comments](wwwroot/mutcd-11th/npa-comments/Comment%20Details.html) - all comments submitted to Docket# FHWA-2020-0001, including attachments
 
+### Recommended Changes
+[NCUTCD Approved Changes](wwwroot/mutcd-11th/ncutcd-approved-changes/Text/nav.xhtml) - During each meeting, the NCUTCD votes to approve proposed additions, revisions, and interpretations to the MUTCD. Since last MUTCD was published in 2023, several changes have been proposed by the NCUTCD. The current approved changes can be found embedded in this version of the 11th edition. The proposed changes approved by the NCUTCD are submitted to the FHWA for consideration for a future revision to the MUTCD. Approval by the NCUTCD does not constitute official rulemaking or acceptance of these changes by the FHWA.
+
 ## MUTCD 2009 Edition
 [Revision 3](wwwroot/mutcd-2009/rev3/Text/nav.xhtml)
