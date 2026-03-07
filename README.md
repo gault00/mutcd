@@ -4,6 +4,7 @@ This site contains UNOFFICIAL copies of the Manual on Uniform Traffic Control De
 Please report any errors discovered using the Github [Issues page](https://github.com/gault00/mutcd/issues).
 
 ## MUTCD 11th Edition
+[11th Edition with Revision 1](wwwroot/mutcd-11th/rev1/Text/nav.xhtml)  
 [11th Edition Final Rule](wwwroot/mutcd-11th/final-rule/Text/nav.xhtml)  
 [11th Edition Final Rule with Markup](wwwroot/mutcd-11th/final-rule-markup/Text/nav.xhtml) - the markup version includes the following embedded in the document:
 * changes from 2009 edition - additions in blue with underline and deletions in red with strike-through
